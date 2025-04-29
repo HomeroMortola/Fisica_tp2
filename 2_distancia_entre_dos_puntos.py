@@ -1,6 +1,6 @@
 import math
 while True:
-    unidadez_utilisar = input("Ingrese las unidades a utilisar(k=kilometro/a=milla/m=metro) :").lower
+    unidadez_utilisar = input("Ingrese las unidades a utilisar(k=kilometro/a=milla/m=metro) :").lower()
 
     #comprobamos si la estrada es valida y asignamos la unidad a utilisar
     match unidadez_utilisar:
@@ -17,7 +17,7 @@ while True:
             print("Entrada no valida")
     
 while True:
-    distancia_calcular = input("Ingrese la distancia a calcular () :").lower
+    distancia_calcular = input("Ingrese la distancia a calcular () :").lower()
     #comprobamos si la estrada es valida y asignamos la unidad a utilisar
     if distancia_calcular == 't' or distancia_calcular == 'e' or distancia_calcular == 'm':
         break
@@ -32,13 +32,13 @@ try:
 
     match distancia_calcular:
         case 't':
-            respuesta = abs((x1-x2))+abs(y1-y2)
+            respuesta = abs(x1-x2)+abs(y1-y2)
         case 'e':
             respuesta = math.sqrt((x1-x2)**2+(y1-y2)**2)
         case 'm':
             respuesta = max((x1-x2),(y1-y2))
 
-
+    print(f"Su resultado es de {respuesta} {unidadez_utilisar}")
 
 except:
     print("Valore no validos")
