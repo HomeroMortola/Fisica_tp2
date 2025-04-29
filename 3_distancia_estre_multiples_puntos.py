@@ -1,22 +1,22 @@
 import math
 import sys
 while True:
-    unidadez_utilisar = str(input("Ingrese las unidades a utilisar(k=kilometro/a=milla/m=metro) :").lower())
+    unidades_utilizar = input("Ingrese las unidades a utilisar(k=kilometro/a=milla/m=metro) :").lower()
 
     #comprobamos si la estrada es valida y asignamos la unidad a utilisar
-    match unidadez_utilisar:
-        case "k":
-            unidadez_utilisar = "kilometros"
+    match unidades_utilizar:
+        case 'k':
+            unidades_utilizar = "kilometros"
             break
         case 'a':
-            unidadez_utilisar = "milla"
+            unidades_utilizar = "milla"
             break
         case 'm':
-            unidadez_utilisar = "metros"
+            unidades_utilizar = "metros"
             break
         case 'z':
+            print("terminando programa")
             exit()
-            break
         case _:
             print("Entrada no valida")
     
@@ -25,8 +25,12 @@ while True:
     #comprobamos si la estrada es valida y asignamos la unidad a utilisar
     if distancia_calcular == 't' or distancia_calcular == 'e' or distancia_calcular == 'm':
         break
+    elif distancia_calcular == 'z':
+        print("terminando programa")
+        exit()
     else:
         print("Entrada no valida")
+    
     
 
 

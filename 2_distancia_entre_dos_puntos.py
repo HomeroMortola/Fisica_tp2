@@ -1,17 +1,17 @@
 import math
 while True:
-    unidadez_utilisar = input("Ingrese las unidades a utilisar(k=kilometro/a=milla/m=metro) :").lower()
+    unidades_utilizar = input("Ingrese las unidades a utilisar(k=kilometro/a=milla/m=metro) :").lower()
 
     #comprobamos si la estrada es valida y asignamos la unidad a utilisar
-    match unidadez_utilisar:
+    match unidades_utilizar:
         case 'k':
-            unidadez_utilisar = "kilometros"
+            unidades_utilizar = "kilometros"
             break
         case 'a':
-            unidadez_utilisar = "milla"
+            unidades_utilizar = "milla"
             break
         case 'm':
-            unidadez_utilisar = "metros"
+            unidades_utilizar = "metros"
             break
         case _:
             print("Entrada no valida")
@@ -38,7 +38,7 @@ try:
         case 'm':
             respuesta = max((x1-x2),(y1-y2))
 
-    print(f"Su resultado es de {respuesta} {unidadez_utilisar}")
+    print(f"Su resultado es de {respuesta} {unidades_utilizar}")
 
 except:
     print("Valore no validos")
