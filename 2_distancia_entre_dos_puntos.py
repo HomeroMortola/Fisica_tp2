@@ -2,9 +2,9 @@ import math
 
 #Función para convertir a metros
 conversion_a_metros = {
-    'k': 1000,     # kilómetros a metros
-    'a': 1609.34,  # millas a metros
-    'm': 1         # metros ya está en metros
+    'k': 1000,     #kilómetros a metros
+    'a': 1609.34,  #millas a metros
+    'm': 1         #metros
 }
 
 #Se pide que el usuario ingrese la unidad
